@@ -1,0 +1,31 @@
+Q1: What is TypeScript and why would I use it in place of JavaScript?
+
+Typescript is free and open source programing language developed and maintened by Microsoft.
+Why TypeScript?
+To overcome problems with javascript which are below,
+1) Objects are loosely structured meaning anyone can modify/add new property to the object.
+eg var person = {'name': 'pardeep singh', 'age': 31}
+person.address = 'Jammu';
+2) No restrictions on calling the function with n number of argument 
+eg. If i have defined one function sum(a,b); and while calling the sum function i can pass 1 to n 
+number of arguments and function will work which eventually will produce unexpected results.
+3)  No type safety meaning, I can have one variable declared and intalized with number and later on can assign
+string value to it
+eg. var a = 5;
+a = 'Pardeep';
+a = true;
+4) We cannot define rules with the help of Tslint and eslint for code quality.
+
+So to solve above problem statement we use Typescript.
+
+Javascript vs Typescript
+
+1) Typescript is a superset of Javascript ie TypeScript is nothing but JavaScript and some additional features
+ i.e. ES6 features. It may not be supported in your target browser but TypeScript compiler can compile the .ts
+ files into ES3,ES4 and ES5 also.
+2) TypeScript always point out the compilation errors at the time of development only.
+ Because of this at the run-time the chance of getting errors are very less whereas JavaScript
+  is an interpreted language.
+3) TypeScript has a feature which is strongly-typed or supports static typing.
+ That means Static typing allows for checking type correctness at compile time.
+  This is not available in JavaScript.
