@@ -18,7 +18,7 @@ a = true;
 
 So to solve above problem statement we use Typescript.
 
-Javascript vs Typescript
+Javascript vs Typescript :
 
 1) Typescript is a superset of Javascript ie TypeScript is nothing but JavaScript and some additional features
  i.e. ES6 features. It may not be supported in your target browser but TypeScript compiler can compile the .ts
