@@ -6,6 +6,9 @@ class Addition {
     // and user needs to have check for other values 
     add(n1: any , n2: any): string | number {  
 
+        if(n1 == null|| n2 == null)
+        return "Value passed is either not a string or number";
+        else
         return n1 + n2;
     }
 
@@ -17,8 +20,29 @@ class Addition {
             return n1+n2;
         }
     } */
+
+     verifyOutput(actual : string| number, expected: string | number) {
+
+       if( actual === expected )
+       {
+           console.log(`Test case passed as expected value was ${actual} against input value ${expected}`);
+       }
+
+       else
+       {
+           console.log(`Test case failed as expected value was ${expected} and actual value received is ${actual}`)
+       }
+    
+    }
+
 }
 
 var addObject = new Addition();
-console.log(addObject.add("Pardeep", "Singh"));
-console.log(addObject.add(5 , 6));
+
+const str1 : string = "Pardeep";
+const str2: string = "Singh";
+
+addObject.verifyOutput(addObject.add(str1, str2), "PardeepSingh");
+addObject.verifyOutput(addObject.add(5,6), 11);
+addObject.verifyOutput(addObject.add(null,1),1);
+addObject.verifyOutput(addObject.add(undefined,"str"),"str");
